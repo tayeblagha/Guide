@@ -7,11 +7,12 @@ A `guide ` and some usefull `commands` in devops.
 
 ## Docker  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 ```bash
-docker run -d -p 3307:3306 --name mysqldb --network=host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=test mysql
+docker run -d -p 3307:3306 --name mysqldb --network=host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=test mysqlv1
 docker network create spring-net
 docker network ls
-docker network connect spring-net mysqldb
+docker network connect spring-net mysqldbv1
 docker container inspect mysqldb
+docker run -d -p 3307:3306 --name mysqldb --network=spring-net -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=test mysqlv2
 docker exec -it mysqldb /bin/sh
 ```
 ## Installation
