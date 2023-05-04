@@ -8,11 +8,11 @@ A `guide ` and some usefull `commands` in devops.
 ## Dokcer  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 ```bash
 docker run -p 3307:3306 --name mysqldb --network=host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=test mysql
-docker exec -it mysqldb /bin/sh
 docker network create spring-net
 docker network ls
 docker network connect spring-net mysqldb
 docker container inspect mysqldb
+docker exec -it mysqldb /bin/sh
 ```
 ## Installation
 
