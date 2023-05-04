@@ -5,7 +5,7 @@
 
 A `guide ` and some usefull `commands` in devops.
 
-## Dokcer  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
+## Docker  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 ```bash
 docker run -d -p 3307:3306 --name mysqldb --network=host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=test mysql
 docker network create spring-net
