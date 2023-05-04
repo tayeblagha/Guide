@@ -19,8 +19,8 @@ docker exec -it mysqldbv1 /bin/sh
 
 After install, make sure to run `joe u`. This will download all `.gitignore` files in `~/joe-data/` folder.
 ### Shortcut
- api (short for api-server)
- cm (short for configmap)
+ <h3> api (short for api-server) </h3> 
+ <h3> cm (short for configmap) <h3>
  crd (short for custom resource definition)
  dep (short for deployment)
  etcd (short for distributed key-value store used by Kubernetes)
