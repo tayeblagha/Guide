@@ -3,17 +3,18 @@
 
 
 
-A `.guide ` and some usefull `.commands` in devops.
+A `guide ` and some usefull `commands` in devops.
 
 ## Dokcer  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
-
-- Written in uncomplicated Go (Golang)
-- No installation necessary - just use the [binary](https://github.com/karan/joe#installation).
-- Stupidly [easy to use](https://github.com/karan/joe#usage)
-- Supports all Github-supported [`.gitignore` files](https://github.com/karan/joe#list-all-available-files)
-- Works on Mac, Linux and (maybe) Windows
-- Supports other version control systems (`.hgignore`)
-
+```bash
+$docker run -p 3307:3306 --name mysqldb -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=test mysql
+docker exec -it mysqldb /bin/sh
+docker network create spring-net
+docker network ls
+docker network connect spring-net mysqldb
+docker container inspect [container_name]
+docker run --network=netName -p 3307:3306 --name mysqldb --env-file .env mysql
+```
 ## Installation
 
 After install, make sure to run `joe u`. This will download all `.gitignore` files in `~/joe-data/` folder.
