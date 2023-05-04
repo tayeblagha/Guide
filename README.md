@@ -18,13 +18,16 @@ docker exec -it mysqldbv1 /bin/sh
 ## Kubernetes  <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="30" height="30"/> </a> 
 
 After install, make sure to run `joe u`. This will download all `.gitignore` files in `~/joe-data/` folder.
-### Option 1: Binary
-
-`joe` is available for OSX (macOS), Linux and Windows.
-
-Download the latest binary from the [Releases page](https://github.com/karan/joe/releases). It's the easiest way to get started with `joe`.
-
-Make sure to add the location of the binary to your `$PATH`.
+### Shortcut
+    api (short for api-server)
+    cm (short for configmap)
+    crd (short for custom resource definition)
+    dep (short for deployment)
+    etcd (short for distributed key-value store used by Kubernetes)
+    ns (short for namespace)
+    node (short for Kubernetes node)
+    pvc (short for persistent volume claim)
+    svc (short for service)
 
 ### Option 2: From source
 
