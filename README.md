@@ -7,7 +7,7 @@ A `.guide ` and some usefull `.commands` in devops.
 
 ![](http://i.imgur.com/2tAksHG.gif)
 
-## Features
+## Dokcer <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a>
 
 - Written in uncomplicated Go (Golang)
 - No installation necessary - just use the [binary](https://github.com/karan/joe#installation).
