@@ -17,7 +17,6 @@ docker exec -it mysqldbv1 /bin/sh
 ```
 ## Kubernetes  <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="30" height="30"/> </a> 
 
-After install, make sure to run `joe u`. This will download all `.gitignore` files in `~/joe-data/` folder.
 ### Shortcut
  <h6> api (short for api-server) </h6> 
  <h6> cm (short for configmap) </h6>
