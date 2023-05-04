@@ -1,6 +1,7 @@
+# Guide
 ![](http://i.imgur.com/y8g506n.png?1)
 
-# Guide
+
 
 A `.gitignore` magician in your command line. Joe generates `.gitignore` files from the command line for you.
 
