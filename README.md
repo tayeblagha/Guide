@@ -3,7 +3,7 @@
 
 
 
-A `.gitignore` magician in your command line. Joe generates `.gitignore` files from the command line for you.
+A `.guide ` and some usefull `.commands` in devops.
 
 ![](http://i.imgur.com/2tAksHG.gif)
 
