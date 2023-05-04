@@ -15,7 +15,7 @@ docker container inspect mysqldbv1
 docker run -d -p 3307:3306 --name mysqldbv2 --network=spring-net -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=test mysql
 docker exec -it mysqldbv1 /bin/sh
 ```
-## Installation  <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> 
+## Kubernetes  <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> 
 
 After install, make sure to run `joe u`. This will download all `.gitignore` files in `~/joe-data/` folder.
 ### Option 1: Binary
