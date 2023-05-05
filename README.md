@@ -131,7 +131,7 @@ To make it run automatically you can once restart use:
 sudo systemctl enable app1.service
 ```
 #### <span style="color:black;font-weight:bold;">Make a Service from Jar in Windows  <img src="https://www.downloadsource.net/image/uploaded/English_2021_Q1/Windows_11_Boot_Screen_Animation/Windows_11_hidden_boot_menu_animation_enable.jpg?fm=webp&s=22b011c445329f4c33434fb37a70696d" alt="service" width="30" height="30"/> </a>  </span>
-Download  sample-minimal.xml  and  WinSW.NET4.exe from the fellowing github link <a  target="_blank" href="https://github.com/winsw/winsw/releases"> click here </a> 
+Download  sample-minimal.xml  and  WinSW.NET4.exe from the fellowing github link <a  target="_blank" href="https://github.com/winsw/winsw/releases"> click here </a> **
 Create a folder containg the two downloaded folders and your jar file**
 open cmd as administrator  and then go to your folder location and edit sample-minimal.xml as the fellowing :
 ```bash
