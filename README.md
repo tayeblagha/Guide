@@ -83,5 +83,6 @@ Finally, you can connect to the VPN server whenever you want by running the foll
 ```
 You will be prompted to enter your password, which is "***********************".
 
-
+## Service   <a href="#" target="_blank" rel="noreferrer"> <img src="https://www.callcentrehelper.com/images/stories/2016/11/customer-service-760.jpg" alt="kubernetes" width="30" height="30"/> </a> 
+#### <span style="color:black;font-weight:bold;">Shortcut</span>
 
