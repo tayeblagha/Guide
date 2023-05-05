@@ -158,7 +158,42 @@ WinSW.NET4.exe install
 ## Mega tools Backup  <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://img.freepik.com/free-vector/cloud-network-technology-icon-blue-gradient-background_53876-119510.jpg?t=st=1683303874~exp=1683304474~hmac=0f8343f16d181fe9a40a3d55f36aed92758994eb53cc4a0383582573f576296a" alt="kubernetes" width="30" height="30"/> </a> 
 you need first to intall megaZ tools as the fellowing:
 ```bash
+sudo apt-get install libssl1.1
 wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megacmd-xUbuntu_20.04_amd64.deb
+sudo apt install ./megacmd*.deb
 ```
+create Folder called script and than create file in it like the fellowing:
+```bash
+mkdir -p ~/scripts/db_backup.sh
+nano ~/scripts/db_backup.sh
+```
+add the fellowing script 
+```xml
+#!/bin/bash
+
+# Set the MySQL credentials
+USER="factar"
+PASSWORD="factardb@2022"
+
+# Set the backup directory
+BACKUP_DIR="/home/user/db_backups"
+
+# Set the MEGA directory for backups
+MEGA_DIR="/Backups/MySQL"
+
+# Create a new directory for today's backup
+NOW=$(date +"%d-%m-%Y_%H-%M")
+BACKUP_PATH="$BACKUP_DIR/$NOW"
+mkdir -p "$BACKUP_PATH"
+
+# Dump the MySQL database to a file in the backup directory
+MYSQL_PWD="$PASSWORD" mysqldump -u "$USER" factar > "$BACKUP_PATH/factar.sql"
+
+# Upload the backup file to MEGA using mega-put
+mega-put "$BACKUP_PATH/factar.sql"   "$TODAY/factar.sql"
+```
+
+
+
 
 
