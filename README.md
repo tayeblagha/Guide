@@ -27,36 +27,59 @@ docker exec -it mysqldbv1 /bin/sh
  <h6>pvc (short for persistent volume claim) </h6>
  <h6>svc (short for service) </h6>
 
-### Option 2: From source
+### Commands
 
 ```bash
-$ git clone git@github.com:karan/joe.git
-$ cd joe/
-$ chmod +x tool.sh
-$ ./tool.sh build
+kubectl delete all --all -n default
+kubectl get po [pod_name] -o jsonpath='{.metadata.uid}'
+kubectl exec -it secret-vol-pod -- /bin/sh
+kubectl api-resources
+kubectl expose deployment twipbox --type=LoadBalancer --name=twipbox-service --port=80 --target-port=8080
+kubectl expose deployment twipbox --type=NodePort --name=twipbox-service --port=80 --target-port=8080
+kubectl port-forward service/mywebapp 8080:80
+kubectl get pod -l app:myapp
+kubectl logs -l app=web,env=prod -c my-container   (-f to persist viewing)
+kubectl rollout restart deployment dep
+kubectl create secret docker-registry regcredential --docker-server=docker.io --docker-username=[docker_username] --docker-password=[docker-password] --docker-email=[docker-email]
+kubectl get secret regcredential --output=yaml
 ```
 
-## Usage
+### Forticlient Vpn :
 
-### Commands:
+connect to forticlient vpn using only commands** 
 
+Open your terminal and type the following command to download the Fortigate SSLVPN CLI:   
+
+             ```bash
+  wget http://cdn.software-mirrors.com/forticlientsslvpn_linux_4.4.2328.tar.gz ```
+
+Once the download is complete, you need to uncompress the downloaded file by running the following command:
+              ```bash
+tar -xzvf forticlientsslvpn_linux_4.4.2328.tar.gz
 ```
-ls | list       list all available files
-u | update      update all available gitignore files
-g | generate    generate gitignore files
+If you don't already have ppp installed, you can install it by running the following command:
+              ```bash
+		sudo apt-get install ppp
 ```
-
-### Basic usage
-
-```bash
-$ joe g java    # outputs .gitignore file for java to stdout
+Go to the installer setup directory by running the following command:
+              ```bash
+		cd ./forticlientsslvpn/64bit/helper
 ```
-
-To update your `.gitignore` files at any time, simply run:
-
-```bash
-$ joe u
+Run the setup file with the following command:
+              ```bash
+		sudo ./setup.linux.sh
 ```
+Once the setup is complete, go to the following directory:
+              ```bash
+		cd ../..
+		cd forticlientsslvpn/64bit/
+```
+Finally, you can connect to the VPN server whenever you want by running the following command:
+              ```bash
+		./forticlientsslvpn_cli --server 41.231.46.254:10443 --vpnuser admin
+```
+You will be prompted to enter your password, which is "***********************".
+
 
 ### Overwrite existing `.gitignore` file
 
