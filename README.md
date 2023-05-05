@@ -165,9 +165,10 @@ sudo apt install ./megacmd*.deb
 create Folder called script and than create file in it like the fellowing:
 ```bash
 mkdir -p ~/scripts/db_backup.sh
+sudo chmod +x ~/scripts/db_backup.sh
 nano ~/scripts/db_backup.sh
 ```
-add the fellowing script 
+add the fellowing script: 
 ```xml
 #!/bin/bash
 
@@ -191,6 +192,15 @@ MYSQL_PWD="$PASSWORD" mysqldump -u "$USER" factar > "$BACKUP_PATH/factar.sql"
 
 # Upload the backup file to MEGA using mega-put
 mega-put "$BACKUP_PATH/factar.sql"   "$TODAY/factar.sql"
+```
+login to you mega account using this command:
+```bash
+mega-login [emai] [password]
+```
+now you run this script successfully with 
+```bash
+cd ~/scripts
+./db_backup.sh
 ```
 
 
