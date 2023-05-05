@@ -122,7 +122,11 @@ SuccessExitStatus=143
 [Install]
 WantedBy=multi-user.target
 ```
-simply start it with this command 
+Simply start it with this command 
 ```bash
 sudo systemctl start app1.service
+```
+To make it run automatically you can once restart use:
+```bash
+sudo systemctl enable app1.service
 ```
