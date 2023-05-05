@@ -147,9 +147,7 @@ sudo systemctl enable app1.service
   <!-- Path to the executable, which should be started -->
   <executable>java</executable>
     <arguments>  -Xmx1548m -Xms800m -jar jarName.jar</arguments>
-
-
-</service>
+</service>`
 ```
 save and exit and than rename your  sample-minimal.xml to WinSW.NET4.xml and run this cmd as administrator  :  
 ```bash
