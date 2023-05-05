@@ -202,7 +202,16 @@ now you run this script successfully with
 cd ~/scripts
 ./db_backup.sh
 ```
-
+To automate Sending Backup everyDay we can use cron job:
+```bash
+crontab -e
+```
+For example this cron job will run the db_backup.sh script located in the ~/scripts/ directory every day at 1:00 AM.
+```xml 
+# Edit this file to introduce tasks to be run by cron.
+0 1 * * * ~/scripts/db_backup.sh
+# Each task to run has to be defined through a single line
+```
 
 
 
