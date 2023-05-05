@@ -135,6 +135,20 @@ sudo systemctl enable app1.service
 <h5> Create a folder containg the two downloaded folders and your jar file </h5>
 <h5> open cmd as administrator  and then go to your folder location and edit sample-minimal.xml as the fellowing : </h5>
 
+```xml
+<service>
+  <!-- ID of the service. It should be unique across the Windows system-->
+  <id>servicename</id>
+  <!-- Display name of the service -->
+  <name>servicename</name>
+  <!-- Service description -->
+  <description>This service is a service created from a minimal configuration</description>
+  
+  <!-- Path to the executable, which should be started -->
+  <executable>java</executable>
+    <arguments>  -Xmx1548m -Xms800m -jar jarName.jar</arguments>
+</service>
+```
 
 save and exit and than rename your  sample-minimal.xml to WinSW.NET4.xml and run this cmd as administrator  :  
 ```bash
