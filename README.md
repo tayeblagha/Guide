@@ -44,7 +44,7 @@ kubectl create secret docker-registry regcredential --docker-server=docker.io --
 kubectl get secret regcredential --output=yaml
 ```
 
-### Forticlient Vpn :
+### Forticlient Vpn <a href="#" target="_blank" rel="noreferrer"> <img src="https://images.sftcdn.net/images/t_app-icon-s/p/87f45a9e-96d4-11e6-b8fa-00163ec9f5fa/1944140565/fortinet-icon.png" alt="kubernetes" width="30" height="30"/> </a> :
 
 connect to forticlient vpn using only commands** 
 
