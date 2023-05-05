@@ -77,7 +77,7 @@ Once the setup is complete, go to the following directory:
 ```
 Finally, you can connect to the VPN server whenever you want by running the following command:
 ```bash
-		./forticlientsslvpn_cli --server 41.231.46.254:10443 --vpnuser admin
+		./forticlientsslvpn_cli --server [Server_Address:Port] --vpnuser admin
 ```
 You will be prompted to enter your password, which is "***********************".
 
