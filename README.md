@@ -27,7 +27,7 @@ docker exec -it mysqldbv1 /bin/sh
  <h6> ns (short for namespace) </h6>
  <h6>pvc (short for persistent volume claim) </h6>
  <h6>svc (short for service) </h6>
-#### <span style="color:black;font-weight:bold;">Commands</span>
+ <span style="color:black;font-weight:bold;">Commands</span>
 
  
 
