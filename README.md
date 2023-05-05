@@ -155,3 +155,5 @@ save and exit and than rename your  sample-minimal.xml to WinSW.NET4.xml and run
 ```bash
 WinSW.NET4.exe install
 ```
+## Mega tools Backup  <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://img.freepik.com/free-vector/cloud-network-technology-icon-blue-gradient-background_53876-119510.jpg?t=st=1683303874~exp=1683304474~hmac=0f8343f16d181fe9a40a3d55f36aed92758994eb53cc4a0383582573f576296a" alt="kubernetes" width="30" height="30"/> </a> 
+#### <span style="color:black;font-weight:bold;">Shortcut</span>
