@@ -16,7 +16,7 @@ docker run -d -p 3307:3306 --name mysqldbv2 --network=spring-net -e MYSQL_ROOT_P
 docker exec -it mysqldbv1 /bin/sh
 ```
 ## Kubernetes  <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="30" height="30"/> </a> 
-<h4 style="color: black; font-weight: bold;">Shortcut Here</h4>
+#### <span style="color:black;font-weight:bold;">Shortcut</span>
 
 
  <h6> api (short for api-server) </h6> 
@@ -27,7 +27,7 @@ docker exec -it mysqldbv1 /bin/sh
  <h6> ns (short for namespace) </h6>
  <h6>pvc (short for persistent volume claim) </h6>
  <h6>svc (short for service) </h6>
-<h4 style="color: black; font-weight: bold;">Commands Here</h4>
+#### <span style="color:black;font-weight:bold;">Commands</span>
 
  
 
