@@ -83,6 +83,46 @@ Finally, you can connect to the VPN server whenever you want by running the foll
 ```
 You will be prompted to enter your password, which is "***********************".
 
-## Service   <a href="#" target="_blank" rel="noreferrer"> <img src="https://png.pngtree.com/png-clipart/20200224/original/pngtree-light-bulb-logo-new-idea-symbol-and-icon-flat-bright-cartoon-png-image_5212484.jpg" alt="service" width="30" height="30"/> </a> 
-#### <span style="color:black;font-weight:bold;">Make a Service from Jar in Linux <img src="https://1000logos.net/wp-content/uploads/2017/03/LINUX-LOGO-453x500.png" alt="service" width="30" height="30"/> </a>  </span>
+## Spring Boot Service   <a href="#" target="_blank" rel="noreferrer"> <img src="https://png.pngtree.com/png-clipart/20200224/original/pngtree-light-bulb-logo-new-idea-symbol-and-icon-flat-bright-cartoon-png-image_5212484.jpg" alt="service" width="30" height="30"/> </a> 
+Male sure to edit you pom.xml and add configuration/executable to it like this and create your jar by running mvn package :
+```bash
+		<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<executable> true</executable>
+				</configuration>
+			</plugin>
+		</plugins>
+		<finalName>spring-boot-service</finalName>
 
+	</build>
+```
+
+#### <span style="color:black;font-weight:bold;">Make a Service from Jar in Linux <img src="https://1000logos.net/wp-content/uploads/2017/03/LINUX-LOGO-453x500.png" alt="service" width="30" height="30"/> </a>  </span>
+create service called app1.service
+```bash
+sudo nano /etc/systemd/system/app1.service
+```
+Add the fellowing:
+```bash
+[Unit]
+Description=Spring init sample
+After=syslog.target
+
+[Service]
+User=tayeb
+Restart=always
+RestartSec=30s
+ExecStart=/usr/bin/java -jar /home/tayeb/Documents/serviceTraining/spring-boot-service.jar
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
+```
+simply start it with this command 
+```bash
+sudo systemctl start app1.service
+```
