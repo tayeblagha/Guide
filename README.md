@@ -49,33 +49,34 @@ kubectl get secret regcredential --output=yaml
 connect to forticlient vpn using only commands** 
 
 Open your terminal and type the following command to download the Fortigate SSLVPN CLI:   
-
-             ```bash
-  wget http://cdn.software-mirrors.com/forticlientsslvpn_linux_4.4.2328.tar.gz ```
+```bash
+wget http://cdn.software-mirrors.com/forticlientsslvpn_linux_4.4.2328.tar.gz
+```
 
 Once the download is complete, you need to uncompress the downloaded file by running the following command:
-              ```bash
+```bash
 tar -xzvf forticlientsslvpn_linux_4.4.2328.tar.gz
 ```
+
 If you don't already have ppp installed, you can install it by running the following command:
-              ```bash
+```bash
 		sudo apt-get install ppp
 ```
 Go to the installer setup directory by running the following command:
-              ```bash
+```bash
 		cd ./forticlientsslvpn/64bit/helper
 ```
 Run the setup file with the following command:
-              ```bash
+```bash
 		sudo ./setup.linux.sh
 ```
 Once the setup is complete, go to the following directory:
-              ```bash
+```bash
 		cd ../..
 		cd forticlientsslvpn/64bit/
 ```
 Finally, you can connect to the VPN server whenever you want by running the following command:
-              ```bash
+```bash
 		./forticlientsslvpn_cli --server 41.231.46.254:10443 --vpnuser admin
 ```
 You will be prompted to enter your password, which is "***********************".
