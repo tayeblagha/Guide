@@ -237,9 +237,34 @@ AWS S3 (simple storage service)    <img src="https://w7.pngwing.com/pngs/564/59/
 
 <h6>  Allow Static Web hosting   </h6>
 <img src="https://github.com/tayeblagha/Guide/blob/main/3.png?raw=true"  width="600" height="320"/>
+```xml
+.deploy:
+  image:
+    name: amazon/aws-cli:2.4.11
+    entrypoint: [""]
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH'
+  script:
+    - aws --version
+    - aws s3 sync build s3://$AWS_S3_BUCKET --delete
+    - curl $CI_ENVIRONMENT_URL | grep "React App"
+    - curl $CI_ENVIRONMENT_URL/version.html | grep $APP_VERSION
 
+deploy_to_staging:
+  stage: deploy staging
+  environment: staging
+  extends: .deploy
+  tags:
+    - shared
 
-
+deploy_to_production:
+  stage: deploy production
+  environment: production
+  extends: .deploy
+  when: manual 
+  tags:
+    - shared
+```
  
 
 
