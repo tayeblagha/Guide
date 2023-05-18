@@ -216,17 +216,36 @@ For example this cron job will run the db_backup.sh script located in the ~/scri
 ### Gitalb CI/CD   <img src="https://secrethub.io/img/gitlab-ci.png" alt="docker" width="30" height="30"/>
 <h4> Gitlab Runner Installation and Configuration <img src="https://www.n0r1sk.com/media/2019/09/15/gitlab-ce-mutliple-pipelines-header.jpg" width="30" height="30"/>  </h4> 
 First add the official GitLab Repository using below command, to check latest Gitlab Repository visit the official <a href="https://docs.gitlab.com/runner/install/linux-repository.html" > Gitlab Runner </a>  :
+
 ```bash
-mega-login [emai] [password]
+curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
 ```
-now you run this script successfully with 
+Install GitLab Runner on Ubuntu
 ```bash
-cd ~/scripts
-./db_backup.sh
+sudo apt-get install gitlab-runner
 ```
-To automate Sending Backup everyDay we can use cron job:
-```bash
-crontab -e
+chose docker in registring your local gitlab runner and configure it after joining repository 
+nano /etc/gitlab-runner/config.toml
+
+```xml
+[[runners]]
+  name = "smoothalgo"
+  url = "https://gitlab.com/"
+  id = 21705631
+  token = "4YsrhvHhar22YrTvWCsp"
+  token_obtained_at = 2023-03-09T08:26:55Z
+  token_expires_at = 0001-01-01T00:00:00Z
+  executor = "docker"
+  [runners.docker]
+    tls_verify = false
+    image = "ruby:2.7"
+    privileged = false
+    disable_entrypoint_overwrite = false
+    oom_kill_disable = false
+    disable_cache = false
+    volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
+    shm_size = 0
+```
 AWS IAM and Gitlab variables <img src="https://taswar.zeytinsoft.com/wp-content/uploads/2019/10/aws-iam.png" width="30" height="30"/> 
 <h6  > You can centrally manage permissions that control which AWS resources users can access.  </h6>
 <img src="https://github.com/tayeblagha/Guide/blob/main/IAMpermission.png?raw=true"  width="600" height="320"/>
