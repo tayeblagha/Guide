@@ -213,7 +213,20 @@ For example this cron job will run the db_backup.sh script located in the ~/scri
 # Each task to run has to be defined through a single line
 ```
 
-### Gitalb CI/CD   <img src="https://secrethub.io/img/gitlab-ci.png" alt="docker" width="30" height="30"/> 
+### Gitalb CI/CD   <img src="https://secrethub.io/img/gitlab-ci.png" alt="docker" width="30" height="30"/>
+<h4> Gitlab Runner Installation and Configuration <img src="https://www.n0r1sk.com/media/2019/09/15/gitlab-ce-mutliple-pipelines-header.jpg" width="30" height="30"/>  </h4> 
+First add the official GitLab Repository using below command, to check latest Gitlab Repository visit the official <a href="https://docs.gitlab.com/runner/install/linux-repository.html" > Gitlab Runner </a>  :
+```bash
+mega-login [emai] [password]
+```
+now you run this script successfully with 
+```bash
+cd ~/scripts
+./db_backup.sh
+```
+To automate Sending Backup everyDay we can use cron job:
+```bash
+crontab -e
 AWS IAM and Gitlab variables <img src="https://taswar.zeytinsoft.com/wp-content/uploads/2019/10/aws-iam.png" width="30" height="30"/> 
 <h6  > You can centrally manage permissions that control which AWS resources users can access.  </h6>
 <img src="https://github.com/tayeblagha/Guide/blob/main/IAMpermission.png?raw=true"  width="600" height="320"/>
@@ -278,4 +291,5 @@ deploy_to_production:
 <h6>  Gitlab Trigger Improve automation and modular pipeline architecture for streamlined CI/CD processes and code reuse.
 It can be used in Multi Projects or Parent/child project and it is so usefull to lean it press this link  <a href="https://www.letsdevops.net/post/letsdevops-gitlab-to-trigger-pipeline-from-another-pipeline-setup-parent-child-pipeline" > click here </a>   <h6> 
 <img src="https://github.com/tayeblagha/Guide/blob/main/trigger.png?raw=true"  width="600" height="320"/>
+
 
