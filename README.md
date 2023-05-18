@@ -274,9 +274,5 @@ deploy_to_production:
     - shared
 ```
 
-AWS ElasticBeansTalk <img src="https://diarmuid.ie/media/2015-05-17/elastic-beanstalk.png" width="30" height="30"/>
-<h6> AWS Elastic Beanstalk simplifies application deployment and management, enabling quick and effortless scaling while optimizing costs. </h6>
-
-
 
 
