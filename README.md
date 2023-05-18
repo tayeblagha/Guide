@@ -43,7 +43,7 @@ kubectl get pod -l app:myapp
 kubectl logs -l app=web,env=prod -c my-container   (-f to persist viewing)
 kubectl rollout restart deployment dep
 kubectl create secret docker-registry regcredential --docker-server=docker.io --docker-username=[docker_username] --docker-password=[docker-password] --docker-email=[docker-email]
-kubectl get secret regcredential --output=yaml
+kubectl get secre.gitlab-ci.yml keyword referencet regcredential --output=yaml
 ```
 
 ### Forticlient Vpn <a href="#" target="_blank" rel="noreferrer"> <img src="https://images.sftcdn.net/images/t_app-icon-s/p/87f45a9e-96d4-11e6-b8fa-00163ec9f5fa/1944140565/fortinet-icon.png" alt="kubernetes" width="30" height="30"/> </a> :
@@ -311,6 +311,6 @@ deploy_to_production:
 It can be used in Multi Projects or Parent/child project and it is so usefull to lean it press this link  <a href="https://www.letsdevops.net/post/letsdevops-gitlab-to-trigger-pipeline-from-another-pipeline-setup-parent-child-pipeline" > click here </a>   <h6> 
 <img src="https://github.com/tayeblagha/Guide/blob/main/trigger.png?raw=true"  width="600" height="320"/>
 <h6> It is always helpful to read official document and learn from it the other advanced keyword  </h6>
-	<a href="https://docs.gitlab.com/ee/ci/yaml/> "  .gitlab-ci.yml keyword reference   </a>
+	<a href="https://docs.gitlab.com/ee/ci/yaml"  keyword reference   </a>
 
-
+test
