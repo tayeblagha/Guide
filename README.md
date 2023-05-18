@@ -235,6 +235,9 @@ AWS S3 (simple storage service)    <img src="https://w7.pngwing.com/pngs/564/59/
 ```
 <img src="https://github.com/tayeblagha/Guide/blob/main/2.png?raw=true"  width="800" height="380"/>
 
+<h6>  Allow Static Web hosting   </h6>
+<img src="https://github.com/tayeblagha/Guide/blob/main/2.png?raw=true"  width="800" height="380"/>
+
 
 
  
