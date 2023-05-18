@@ -245,6 +245,7 @@ AWS IAM and Gitlab variables <img src="https://taswar.zeytinsoft.com/wp-content/
 <h6>  Allow Static Web hosting   </h6>
 <img src="https://github.com/tayeblagha/Guide/blob/main/3.png?raw=true"  width="600" height="320"/>
 <h6> now we can add the script to .gitlab-ci.yml to sync all our folders to aws s3 bucket  </h6>
+
 ```xml
 .deploy:
   image:
