@@ -219,7 +219,7 @@ AWS IAM and Gitlab variables <img src="https://taswar.zeytinsoft.com/wp-content/
 <img src="https://github.com/tayeblagha/Guide/blob/main/IAMpermission.png?raw=true"  width="600" height="320"/>
 <h6  > Create Acces Key and it's secret (copy the secret because it is only displayed one).  </h6>
 <img src="https://github.com/tayeblagha/Guide/blob/main/IAM2.png?raw=true"  width="600" height="320"/>
-<h6  > Add all the variables (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_DEFAULT_REGION to your gitlab working repository  </h6>
+<h6  > Add all the variables (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_DEFAULT_REGION) to your gitlab working repository  </h6>
 <img src="https://github.com/tayeblagha/Guide/blob/main/IAM1.png?raw=true"  width="600" height="320"/>
 <h4> AWS S3 (simple storage service)    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtodDdx5vI-U_S_F20riDwWJN94YxubjKx-_ptXATLhHZ4-u3nPo9M2WtE7TD8QiTaKSA&usqp=CAU" width="30" height="30"/>  </h4>
 <h6> Create S3 bucket from aws  </h6>
@@ -273,5 +273,5 @@ deploy_to_production:
   tags:
     - shared
 ```
-
+AWS ElasticBeansTalk <img src="https://taswar.zeytinsoft.com/wp-content/uploads/2019/10/aws-iam.png" width="30" height="30"/> 
 
