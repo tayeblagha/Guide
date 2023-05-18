@@ -225,7 +225,7 @@ Install GitLab Runner on Ubuntu
 sudo apt-get install gitlab-runner
 ```
 chose docker in registring your local gitlab runner and configure it after joining repository 
-nano /etc/gitlab-runner/config.toml
+with nano /etc/gitlab-runner/config.toml
 
 ```xml
 [[runners]]
