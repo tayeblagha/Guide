@@ -216,7 +216,7 @@ For example this cron job will run the db_backup.sh script located in the ~/scri
 ### Gitalb CI/CD   <img src="https://secrethub.io/img/gitlab-ci.png" alt="docker" width="30" height="30"/> 
 AWS S3 (simple storage service)    <img src="https://w7.pngwing.com/pngs/564/59/png-transparent-amazon-com-amazon-s3-amazon-web-services-amazon-simple-queue-service-amazon-glacier-bucket-miscellaneous-data-amazon-dynamodb.png" width="30" height="30"/>
 <h6> Create S3 bucket from aws  </h6>
-<img src="https://github.com/tayeblagha/Guide/blob/main/1.png?raw=true"  width="800" height="380"/>
+<img src="https://github.com/tayeblagha/Guide/blob/main/1.png?raw=true"  width="600" height="320"/>
 <h6>  Allow  S3 bucket to be publicly accessible   </h6>
 
 ```bash
