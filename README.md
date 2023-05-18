@@ -214,7 +214,9 @@ For example this cron job will run the db_backup.sh script located in the ~/scri
 ```
 
 ## Gitalb CI/CD   <img src="https://secrethub.io/img/gitlab-ci.png" alt="docker" width="30" height="30"/> 
-	
+# AWS S3 (simple storage service)    <img src="https://tutorialslink.com/Article_img/Blog_image/f3ae95c1-7687-4261-a31d-6248ed2fd240.png" width="30" height="30"/>
+
+
 
 
 
