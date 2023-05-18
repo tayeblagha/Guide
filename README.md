@@ -212,7 +212,8 @@ For example this cron job will run the db_backup.sh script located in the ~/scri
 0 1 * * * ~/scripts/db_backup.sh
 # Each task to run has to be defined through a single line
 ```
-
+## Gitalb CI/CD  <a href=""" target="_blank" rel="noreferrer"> <img src="https://secrethub.io/img/gitlab-ci.png" alt="docker" width="30" height="30"/> </a>
+	
 
 
 
