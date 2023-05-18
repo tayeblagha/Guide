@@ -273,5 +273,6 @@ deploy_to_production:
   tags:
     - shared
 ```
-AWS ElasticBeansTalk <img src="https://taswar.zeytinsoft.com/wp-content/uploads/2019/10/aws-iam.png" width="30" height="30"/> 
+AWS ElasticBeansTalk <img src="https://d3075pyijv0bbs.cloudfront.net/marketplace_5/c64b6363568ff6edffcf7466eab8d59e0e50c6d7/logos/9141251bc965b883859f891e86c1de3f6484485e.png" width="30" height="30"/> 
+
 
