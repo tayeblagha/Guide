@@ -275,5 +275,6 @@ deploy_to_production:
     - shared
 ```
 <h4> Gitlab Trigger <img src="https://www.n0r1sk.com/media/2019/09/15/gitlab-ce-mutliple-pipelines-header.jpg" width="30" height="30"/>  </h4>
+ Gitlab Trigger Improve automation and modular pipeline architecture for streamlined CI/CD processes and code reuse.
 It can be used in Multi Projects or Parent/child project and it is so usefull to lean it press this link <a href="https://www.letsdevops.net/post/letsdevops-gitlab-to-trigger-pipeline-from-another-pipeline-setup-parent-child-pipeline" > click here </a>
 
