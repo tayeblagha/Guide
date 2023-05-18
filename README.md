@@ -218,4 +218,24 @@ AWS S3 (simple storage service)    <img src="https://w7.pngwing.com/pngs/564/59/
 <h6> Create S3 bucket from aws  </h6>
 <img src="https://github.com/tayeblagha/Guide/blob/main/1.png?raw=true"  width="800" height="380"/>
 
+<img src="https://github.com/tayeblagha/Guide/blob/main/2.png?raw=true"  width="800" height="380"/>
+```xml 
+# Allow  S3 bucket to be publicly accessible 
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicRead",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::[S3_BUCKET_NAME]/*"
+        }
+    ]
+}
+```
+
+
+ 
+
 
