@@ -310,5 +310,6 @@ deploy_to_production:
 <h6>  Gitlab Trigger Improve automation and modular pipeline architecture for streamlined CI/CD processes and code reuse.
 It can be used in Multi Projects or Parent/child project and it is so usefull to lean it press this link  <a href="https://www.letsdevops.net/post/letsdevops-gitlab-to-trigger-pipeline-from-another-pipeline-setup-parent-child-pipeline" > click here </a>   <h6> 
 <img src="https://github.com/tayeblagha/Guide/blob/main/trigger.png?raw=true"  width="600" height="320"/>
+It is always helpful to read official document and learn from it the other advanced keyword <a href="https://docs.gitlab.com/ee/ci/yaml/>   .gitlab-ci.yml keyword reference   </a>
 
 
