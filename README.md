@@ -237,7 +237,8 @@ AWS S3 (simple storage service)    <img src="https://w7.pngwing.com/pngs/564/59/
 
 <h6>  Allow Static Web hosting   </h6>
 <img src="https://github.com/tayeblagha/Guide/blob/main/3.png?raw=true"  width="600" height="320"/>
-```bash
+
+```xml
 .deploy:
   image:
     name: amazon/aws-cli:2.4.11
@@ -265,6 +266,5 @@ deploy_to_production:
   tags:
     - shared
 ```
- 
 
 
