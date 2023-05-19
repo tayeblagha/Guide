@@ -311,5 +311,9 @@ deploy_to_production:
 It can be used in Multi Projects or Parent/child project and it is so usefull to lean it press this link  <a href="https://www.letsdevops.net/post/letsdevops-gitlab-to-trigger-pipeline-from-another-pipeline-setup-parent-child-pipeline" > click here </a>   <h6> 
 <img src="https://github.com/tayeblagha/Guide/blob/main/trigger.png?raw=true"  width="600" height="320"/>
 <h6> It is always helpful to read official document and learn from it the other advanced keyword  <a href="https://docs.gitlab.com/ee/ci/yaml" > keyword reference   </a> </h6>
+<h4> Gitlab Rules <img src="https://www.bitslovers.com/wp-content/uploads/2022/04/20220121_071007_0000.webp" width="30" height="30"/>  </h4>
+These is a nice reference of .gitlab-ci rule  that should be mastered <a href="https://www.bitslovers.com/gitlab-ci-rules/" > GitLab CI Rules </a> 
+
+
 	
 
