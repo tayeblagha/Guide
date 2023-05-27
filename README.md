@@ -26,7 +26,9 @@ server:
 Finally you will sucessfully be able to connect with https protocol instead of http.
 <img src="https://github.com/tayeblagha/Guide/blob/main/ssl.jpg?raw=true"  width="600" height="320"/>
 ## Add your folder project to your cpanel file Manager <a href="#" target="_blank" rel="noreferrer"> <img src="https://styles.redditmedia.com/t5_2s3go/styles/communityIcon_epq2iygkf4h91.jpg?width=256&s=35595f575f3202fdf5dd19a071a2948de4abf74d" alt="cpanel" width="30" height="30"/> </a>
-Compress your project folder and make it in file format like zip like the image bellow
+Compress your project folder and make it in file format like zip like the image bellow:
+<img src="https://github.com/tayeblagha/Guide/blob/main/compress.png?raw=true"  width="600" height="320"/>
+
 
 ## Docker  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="30" height="30"/> </a>
 ```bash
