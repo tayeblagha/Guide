@@ -23,6 +23,9 @@ server:
     key-store-password: myPassPhrase
     key-alias: expertwall
 ```
+Finally you will sucessfully be able to connect with https protocol instead of http
+<img src="https://github.com/tayeblagha/Guide/blob/main/ssl.jpg?raw=true"  width="600" height="320"/>
+
 
 
 
