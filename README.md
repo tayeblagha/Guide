@@ -5,13 +5,25 @@
 
 A `guide ` and some usefull `commands` in devops.
 ## Configure SSL Certificate with Spring Boot  <img src="https://img.freepik.com/premium-vector/secure-ssl-encryption-logo-secure-connection-icon-vector-illustration-ssl-certificate-icon_526569-766.jpg?w=2000" alt="ssl" width="30" height="30"/> 
-fter getting Certificat folder from your ssl provider you need to make few changes as fellow
+After getting Certificat folder from your ssl provider you need to make few changes as fellows
 <img src="https://github.com/tayeblagha/Guide/blob/main/ssl.png?raw=true"  width="600" height="320"/>
 ```bash
 openssl pkcs12 -export -in certificate.crt -inkey private.key -name expertwall -out PKCS-12.p12
 keytool -importkeystore -deststorepass myPassPhrase -destkeystore keystore.jks -srckeystore PKCS-12.p12 -srcstoretype PKCS12
 keytool -import -alias bundle -trustcacerts -file ca_bundle.crt -keystore keystore.jks
 ```
+After that edit configuration in your application.yml as fellows
+
+```xml
+server:
+  contextPath: /expertwall
+  port: 8443
+  ssl:
+    key-store: classpath:expertwall-keystore.jks
+    key-store-password: myPassPhrase
+    key-alias: expertwall
+```
+
 
 
 ## Docker  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="30" height="30"/> </a>
