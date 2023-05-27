@@ -4,7 +4,7 @@
 
 
 A `guide ` and some usefull `commands` in devops.
-## Configure SSL Certificate with Spring Boot  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://www.globalsign.com/application/files/8915/9434/4224/large-General_Banner_Types_of_TLS_Certificates_1_APAC_2020_05_04.jpg" alt="ssl" width="30" height="30"/> </a>
+## Configure SSL Certificate with Spring Boot  <a href="https://img.freepik.com/premium-vector/secure-ssl-encryption-logo-secure-connection-icon-vector-illustration-ssl-certificate-icon_526569-766.jpg?w=2000" alt="ssl" width="30" height="30"/> </a>
 
 
 ## Docker  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="30" height="30"/> </a>
