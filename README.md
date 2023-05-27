@@ -16,17 +16,15 @@ After that edit configuration in your application.yml as fellows
 
 ```xml
 server:
-  contextPath: /expertwall
+  contextPath: /
   port: 8443
   ssl:
     key-store: classpath:keystore.jks
     key-store-password: myPassPhrase
     key-alias: expertwall
 ```
-Finally you will sucessfully be able to connect with https protocol instead of http
+Finally you will sucessfully be able to connect with https protocol instead of http.
 <img src="https://github.com/tayeblagha/Guide/blob/main/ssl.jpg?raw=true"  width="600" height="320"/>
-
-
 
 
 ## Docker  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="30" height="30"/> </a>
