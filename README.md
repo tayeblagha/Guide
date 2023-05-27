@@ -31,6 +31,10 @@ Finally you will sucessfully be able to connect with https protocol instead of h
 <h5> In my case I am using node js in my website so make sure to delete the older website application </h5>
 <img src="https://github.com/tayeblagha/Guide/blob/main/deletesmooth.png?raw=true"  width="600" height="320"/>
 <h5> The rest is a matter of technique and so simple after connecting to you cpanel and accessing your file Manager just delete the old folder and  upload the new one in zip format and then extract it. </h5>
+<img src="https://github.com/tayeblagha/Guide/blob/main/extract.png?raw=true"  width="600" height="320"/>
+<h5>  now setup the new node js application mapping it to the new folder in my case the folder is been called smooth </h5>
+<img src="https://github.com/tayeblagha/Guide/blob/main/nodefinal.png?raw=true"  width="600" height="320"/>
+
 
 
 ## Docker  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="30" height="30"/> </a>
