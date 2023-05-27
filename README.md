@@ -5,6 +5,8 @@
 
 A `guide ` and some usefull `commands` in devops.
 ## Configure SSL Certificate with Spring Boot  <img src="https://img.freepik.com/premium-vector/secure-ssl-encryption-logo-secure-connection-icon-vector-illustration-ssl-certificate-icon_526569-766.jpg?w=2000" alt="ssl" width="30" height="30"/> 
+After getting Certificat folder from your ssl provider you need to make few changes as fellow
+
 
 
 ## Docker  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="30" height="30"/> </a>
