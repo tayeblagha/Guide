@@ -19,7 +19,7 @@ server:
   contextPath: /expertwall
   port: 8443
   ssl:
-    key-store: classpath:expertwall-keystore.jks
+    key-store: classpath:keystore.jks
     key-store-password: myPassPhrase
     key-alias: expertwall
 ```
