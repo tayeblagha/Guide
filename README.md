@@ -75,6 +75,7 @@ kubectl get pod -l app:myapp
 kubectl logs -l app=web,env=prod -c my-container   (-f to persist viewing)
 kubectl rollout restart deployment dep
 kubectl create secret docker-registry regcredential --docker-server=docker.io --docker-username=[docker_username] --docker-password=[docker-password] --docker-email=[docker-email]
+kubectl create secret docker-registry registry-credentials --docker-server=https://registry.gitlab.com --docker-username=REGISTRY_USERNAME --docker-password=REGISTRY_PASSWORD --docker-email=REGISTRY_EMAIL
 kubectl get secre.gitlab-ci.yml keyword referencet regcredential --output=yaml
 ```
 
