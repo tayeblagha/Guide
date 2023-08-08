@@ -8,6 +8,10 @@ A `guide ` and some usefull `commands` in devops.
 After getting Certificat folder from your ssl provider you need to make few changes as fellows
 <img src="https://github.com/tayeblagha/Guide/blob/main/ssl.png?raw=true"  width="600" height="320"/>
 ```bash
+sudo certbot certonly --manual --preferred-challenges=http -d factar.tn -d www.factar.tn
+keytool -importkeystore -destkeystore expertwall.jks -deststoretype JKS -srckeystore certkey.p12 -srcstoretype PKCS12 -alias expertwall
+openssl pkcs12 -export -in cert.pem  -inkey privkey.pem -name expertwall -out PKCS-12.p12
+
 openssl pkcs12 -export -in certificate.crt -inkey private.key -name expertwall -out PKCS-12.p12
 keytool -importkeystore -deststorepass myPassPhrase -destkeystore keystore.jks -srckeystore PKCS-12.p12 -srcstoretype PKCS12
 keytool -import -alias bundle -trustcacerts -file ca_bundle.crt -keystore keystore.jks
