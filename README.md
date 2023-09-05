@@ -6,7 +6,7 @@
 A `guide ` and some usefull `commands` in devops.
 ## Configure SSL Certificate with Spring Boot  <img src="https://img.freepik.com/premium-vector/secure-ssl-encryption-logo-secure-connection-icon-vector-illustration-ssl-certificate-icon_526569-766.jpg?w=2000" alt="ssl" width="30" height="30"/> 
 After getting Certificat folder from your ssl provider you need to make few changes as fellows
-<img src="https://github.com/tayeblagha/Guide/blob/main/ssl.png?raw=true"  width="600" height="320"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/ssl.png?raw=true"  width="600" height="320"/>
 ```bash
 sudo certbot certonly --manual --preferred-challenges=http -d factar.tn -d www.factar.tn
 openssl pkcs12 -export -in fullchain.pem -inkey privkey.pem -out domain.p12 -name expertwall
@@ -28,16 +28,16 @@ server:
     key-alias: expertwall
 ```
 Finally you will sucessfully be able to connect with https protocol instead of http.
-<img src="https://github.com/tayeblagha/Guide/blob/main/ssl.jpg?raw=true"  width="600" height="320"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/ssl.jpg?raw=true"  width="600" height="320"/>
 ## Add your folder project to your cpanel file Manager <a href="#" target="_blank" rel="noreferrer"> <img src="https://styles.redditmedia.com/t5_2s3go/styles/communityIcon_epq2iygkf4h91.jpg?width=256&s=35595f575f3202fdf5dd19a071a2948de4abf74d" alt="cpanel" width="30" height="30"/> </a>
 <h5> Compress your project folder and make it in file format like zip like the image bellow: </h5>
-<img src="https://github.com/tayeblagha/Guide/blob/main/compress.png?raw=true"  width="600" height="320"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/compress.png?raw=true"  width="600" height="320"/>
 <h5> In my case I am using node js in my website so make sure to delete the older website application </h5>
-<img src="https://github.com/tayeblagha/Guide/blob/main/deletesmooth.png?raw=true"  width="600" height="320"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/deletesmooth.png?raw=true"  width="600" height="320"/>
 <h5> The rest is a matter of technique and so simple after connecting to you cpanel and accessing your file Manager just delete the old folder and  upload the new one in zip format and then extract it. </h5>
-<img src="https://github.com/tayeblagha/Guide/blob/main/extract.png?raw=true"  width="900" height="420"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/extract.png?raw=true"  width="900" height="420"/>
 <h5>  now setup the new node js application mapping it to the new folder in my case the folder is been called smooth </h5>
-<img src="https://github.com/tayeblagha/Guide/blob/main/nodefinal.png?raw=true"  width="900" height="420"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/nodefinal.png?raw=true"  width="900" height="420"/>
 
 
 
@@ -170,7 +170,7 @@ sudo systemctl enable app1.service
 #### <span style="color:black;font-weight:bold;">Make a Service from Jar in Windows  <img src="https://www.downloadsource.net/image/uploaded/English_2021_Q1/Windows_11_Boot_Screen_Animation/Windows_11_hidden_boot_menu_animation_enable.jpg?fm=webp&s=22b011c445329f4c33434fb37a70696d" alt="service" width="30" height="30"/> </a>  </span>
 <h5> Download  sample-minimal.xml  and  WinSW.NET4.exe from the fellowing github link <a  target="_blank" href="https://github.com/winsw/winsw/releases"> click here </a> </h5>
 <h5> Create a folder containg the two downloaded folders and your jar file. </h5>
-<img src="https://github.com/tayeblagha/Guide/blob/main/windowsservice.png?raw=true" alt="service" width="450" height="150"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/windowsservice.png?raw=true" alt="service" width="450" height="150"/>
 <h5> open cmd as administrator  and then go to your folder location and edit sample-minimal.xml as the fellowing : </h5>
 
 ```xml
@@ -285,14 +285,14 @@ with nano /etc/gitlab-runner/config.toml
 ```
 AWS IAM and Gitlab variables <img src="https://taswar.zeytinsoft.com/wp-content/uploads/2019/10/aws-iam.png" width="30" height="30"/> 
 <h6  > You can centrally manage permissions that control which AWS resources users can access.  </h6>
-<img src="https://github.com/tayeblagha/Guide/blob/main/IAMpermission.png?raw=true"  width="600" height="320"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/IAMpermission.png?raw=true"  width="600" height="320"/>
 <h6  > Create Acces Key and it's secret (copy the secret because it is only displayed one).  </h6>
-<img src="https://github.com/tayeblagha/Guide/blob/main/IAM2.png?raw=true"  width="600" height="320"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/IAM2.png?raw=true"  width="600" height="320"/>
 <h6  > Add all the variables (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_DEFAULT_REGION) to your gitlab working repository  </h6>
-<img src="https://github.com/tayeblagha/Guide/blob/main/IAM1.png?raw=true"  width="600" height="320"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/IAM1.png?raw=true"  width="600" height="320"/>
 <h4> AWS S3 (simple storage service)    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtodDdx5vI-U_S_F20riDwWJN94YxubjKx-_ptXATLhHZ4-u3nPo9M2WtE7TD8QiTaKSA&usqp=CAU" width="30" height="30"/>  </h4>
 <h6> Create S3 bucket from aws  </h6>
-<img src="https://github.com/tayeblagha/Guide/blob/main/1.png?raw=true"  width="600" height="320"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/1.png?raw=true"  width="600" height="320"/>
 <h6>  Allow  S3 bucket to be publicly accessible   </h6>
 
 ```bash
@@ -309,10 +309,10 @@ AWS IAM and Gitlab variables <img src="https://taswar.zeytinsoft.com/wp-content/
     ]
 }
 ```
-<img src="https://github.com/tayeblagha/Guide/blob/main/2.png?raw=true"  width="600" height="320"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/2.png?raw=true"  width="600" height="320"/>
 
 <h6>  Allow Static Web hosting   </h6>
-<img src="https://github.com/tayeblagha/Guide/blob/main/3.png?raw=true"  width="600" height="320"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/3.png?raw=true"  width="600" height="320"/>
 <h6> now we can add the script to .gitlab-ci.yml to sync all our folders to aws s3 bucket  </h6>
 
 ```xml
@@ -346,7 +346,7 @@ deploy_to_production:
 <h4> Gitlab Trigger <img src="https://www.n0r1sk.com/media/2019/09/15/gitlab-ce-mutliple-pipelines-header.jpg" width="30" height="30"/>  </h4>
 <h6>  Gitlab Trigger Improve automation and modular pipeline architecture for streamlined CI/CD processes and code reuse.
 It can be used in Multi Projects or Parent/child project and it is so usefull to lean it press this link  <a href="https://www.letsdevops.net/post/letsdevops-gitlab-to-trigger-pipeline-from-another-pipeline-setup-parent-child-pipeline" > click here </a>   <h6> 
-<img src="https://github.com/tayeblagha/Guide/blob/main/trigger.png?raw=true"  width="600" height="320"/>
+<img src="https://github.com/taieblagha/Guide/blob/main/trigger.png?raw=true"  width="600" height="320"/>
 <h6> It is always helpful to read official document and learn from it the other advanced keyword  <a href="https://docs.gitlab.com/ee/ci/yaml" > keyword reference   </a> </h6>
 <h4> Gitlab Rules <img src="https://www.bitslovers.com/wp-content/uploads/2022/04/20220121_071007_0000.webp" width="30" height="30"/>  </h4>
 These is a nice reference of .gitlab-ci rule  that should be mastered <a href="https://www.bitslovers.com/gitlab-ci-rules/" > GitLab CI Rules </a> 
