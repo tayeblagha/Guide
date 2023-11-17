@@ -352,6 +352,7 @@ It can be used in Multi Projects or Parent/child project and it is so usefull to
 These is a nice reference of .gitlab-ci rule  that should be mastered <a href="https://www.bitslovers.com/gitlab-ci-rules/" > GitLab CI Rules </a> 
 
 <h4> Git  </h4>
+
 ```bash
 git log --oneline
 git cherry-pick headID
