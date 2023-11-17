@@ -351,6 +351,22 @@ It can be used in Multi Projects or Parent/child project and it is so usefull to
 <h4> Gitlab Rules <img src="https://www.bitslovers.com/wp-content/uploads/2022/04/20220121_071007_0000.webp" width="30" height="30"/>  </h4>
 These is a nice reference of .gitlab-ci rule  that should be mastered <a href="https://www.bitslovers.com/gitlab-ci-rules/" > GitLab CI Rules </a> 
 
+<h4> Git  </h4>
+```bash
+git log --oneline
+git cherry-pick headID
+git merge 
+git rebase 
+git merge --squash
+git cherry-pick -x headID   (add comment that it was cherrypicked from comment)
+git cherry-pick -e headID   (chose what is wrtten in commit)
+git config --system --list    (System Wide Configuration)
+git config --list        
+.gitignore
+git rebase -i HEAD~5 ( number of commits that will be squashed into one commit    with  s: squach    with f: withoutshowing previous commit)
+git reset 68fe5901d7ee41d59e14c2cb71742a4e140c5b42 --hard  (delete new commit and reset to the specific id : )
+```
+
 
 	
 
